@@ -15,6 +15,17 @@ function isValidPassword(password) {
   var passwordPattern = /^(?=.*[A-Z])(?=.*\d).{6,}$/;
   return passwordPattern.test(password);
 }
+// Toggle password visibility
+$("#togglePass").click(function () {
+  var type = $("#pass").attr("type") === "password" ? "text" : "password";
+  $("#pass").attr("type", type);
+});
+
+// Toggle confirm password visibility
+$("#toggleCPass").click(function () {
+  var type = $("#cpass").attr("type") === "password" ? "text" : "password";
+  $("#cpass").attr("type", type);
+});
 
 $("button").click(function() {
   

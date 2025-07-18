@@ -39,6 +39,15 @@ button{
     border-radius: 10px;
     background-color: aquamarine;
 }
+#togglePass,#toggleCPass{
+    position: relative;
+    left: 30px;
+}
+p1{
+    position: relative;
+    left: 290px;
+    top: 7px;
+}
 #error{
     background-color: rgb(232, 12, 12);
 }

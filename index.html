@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+   
+    <div class="formBox">
+        <div class="elements">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="enter your name" >
+        </div>
+        <div class="elements">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email address" required>
+        </div>
+        <div class="elements">
+            <label for="phone">mobile no. :</label>
+            <input type="number" id="phone" name="phone" required placeholder="enter your mobile no." >
+        </div>
+        <div class="elements">
+            <label for="pass">create password:</label>
+            <input type="text" id="pass" name="pass" placeholder="enter new password" required>
+        </div>
+        <div class="elements">
+            <label for="cpass">confirm password:</label>
+            <input type="text" id="cpass" name="cpass" placeholder="confirm new password" required>
+        </div>
+        <br>
+        <button id="submitButton">submit</button>
+        <p id="error"></p>
+        <p id="success"></p>
+    </div>
+ 
+</body>
+</html>

@@ -27,6 +27,10 @@ $("#toggleCPass").click(function () {
   $("#cpass").attr("type", type);
 });
 
+$('#phone').on('input', function() {
+    this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10); // Keep only digits and max 10
+});
+  
 $("button").click(function() {
   
   $("#error").html("");
